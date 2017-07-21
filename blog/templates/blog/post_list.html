@@ -6,20 +6,16 @@
       <center>
 
         <div>
-            <h1><a href="">Welcome to Paradise!!</a></h1>
+            <h1><font color="black"><!--<a href="">-->Welcome to Paradise!!<!--</a>--></font></h1>
         </div>
 
 
         {% for post in posts %}
+
         <div>
            <p>published: {{ post.published_date }}</p>
-           <h2><a href="">{{ post.title }}</a></h2>
+           <h2><a href=""><font color="black">{{ post.title }}</a></font></h2>
            <p>{{ post.text|linebreaksbr }}</p>
-           {
-    column-count: 2;
-    column-count: 2;
-    column-count: 2;
-}
         </div>
 
 
@@ -27,16 +23,9 @@
 
     <style>
 
-        /*body {
-            background-color: lightblue;
-        }*/
-
         body {
             color: black;
         }
-
-        /*h1 {
-            color: green;*/
 
 
         body {
